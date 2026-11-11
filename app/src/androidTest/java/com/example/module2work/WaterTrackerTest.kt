@@ -16,7 +16,7 @@ class WaterTrackerTest {
     fun testWaterTrackerButtonsAndDays() {
         // Устанавливаем контент строго внутри лямбды setContent
         composeTestRule.setContent {
-            Module2WorkTheme { // Если тема называется иначе, поменяй здесь
+            Module2WorkTheme {
                 WaterTracker()
             }
         }

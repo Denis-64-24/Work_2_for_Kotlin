@@ -31,7 +31,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.module2work.ui.theme.Module2WorkTheme
 import kotlin.random.Random
-
+import androidx.compose.foundation.Image
+import androidx.compose.ui.res.painterResource
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -200,10 +201,9 @@ fun Task6VectorCircles() {
                 .background(Color.Black),
             contentAlignment = Alignment.TopEnd
         ) {
-            Icon(
-                imageVector = Icons.Default.Star,
+            Image(
+                painter = painterResource(id = R.drawable.circle),
                 contentDescription = null,
-                tint = Color(0xFFFF5722),
                 modifier = Modifier.size(48.dp)
             )
         }

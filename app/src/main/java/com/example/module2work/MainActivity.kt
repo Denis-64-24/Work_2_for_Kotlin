@@ -184,7 +184,6 @@ fun Task5InitialsBox() {
                 .padding(vertical = 16.dp)
         ) {
             Box(contentAlignment = Alignment.Center) {
-                // Инициалы: Семёнов Денис -> СД
                 Text(text = "СД", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 20.sp)
             }
         }
